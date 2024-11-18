@@ -1,0 +1,26 @@
+{
+    "name": "John Doe",
+    "age": 30,
+    "isEmployed": true,
+    "skills": [
+        "Python",
+        "JavaScript",
+        "SQL"
+    ],
+    "address": {
+        "street": "123 Elm Street",
+        "city": "Somewhere",
+        "state": "CA",
+        "postalCode": "90210"
+    },
+    "projects": [
+        {
+            "name": "Website Redesign",
+            "status": "completed"
+        },
+        {
+            "name": "Mobile App Development",
+            "status": "in-progress"
+        }
+    ]
+}
