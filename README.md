@@ -1,6 +1,6 @@
 # Yajto
 
-Yajto is a tool for converting data between multiple structured file formats like **YAML** and **JSON**.
+🐡 Yajto is a tool for converting data between multiple structured file formats like **YAML** and **JSON**.
 
 
 ## What It Does
@@ -27,7 +27,6 @@ However, switching between these formats manually can be time-consuming and erro
 - **Preserves Structure**: Maintains data integrity and formatting during conversions.
 - **Ease of Use**: Convert files with a simple function call, ensuring minimal setup.
 
----
 
 ## How to Use
 
