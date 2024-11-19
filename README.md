@@ -5,7 +5,7 @@
 
 ## What It Does
 
-The **YAML-JSON Converter** allows you to:
+**Yajto** allows you to:
 - Convert JSON files into well-structured YAML files.
 - Convert YAML files (including `.yml` extensions) into properly formatted JSON files.
 
