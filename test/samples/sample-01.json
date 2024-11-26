@@ -1,0 +1,38 @@
+{
+    "id": 12345,
+    "name": "JSON structure example",
+    "is_active": true,
+    "price": 199.99,
+    "categories": ["electronics", "gadgets"],
+    "specifications": {
+        "dimensions": {
+            "width": 15.5,
+            "height": 7.8,
+            "depth": 1.2
+        },
+        "weight": "1.25 kg",
+        "colors": ["black", "silver", "white"]
+    },
+    "tags": [
+        {"id": 1, "name": "new"},
+        {"id": 2, "name": "sale"}
+    ],
+    "related_items": [98765, 87654, 76543],
+    "metadata": null,
+    "creation_date": "2024-01-01T12:34:56Z",
+    "properties": {
+        "material": "plastic",
+        "warranty_years": 2,
+        "certifications": [
+            {"type": "CE", "valid_until": "2026-12-31"},
+            {"type": "FCC", "valid_until": "2025-06-30"}
+        ]
+    },
+    "notes": "Handle with care.\nDo not expose to extreme temperatures.",
+    "multi_line_array": [
+        ["value1", "value2", "value3"],
+        ["value4", "value5"]
+    ],
+    "empty_array": [],
+    "empty_object": {}
+}
