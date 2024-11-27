@@ -1,16 +1,31 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"log"
+	"os"
 
-	"github.com/luquor/yajto/internal"
+	"gopkg.in/yaml.v3"
 )
 
 func main() {
-	inputFile, outputFile, extension, dryRun := internal.ParseArguments()
+	file, err := os.ReadFile("./test/samples/sample-01.json")
+	if err != nil {
+		log.Fatalf("Failed to read JSON file: %v", err)
+	}
 
-	fmt.Printf("Input File: %s\n", inputFile)
-	fmt.Printf("Output File: %s\n", outputFile)
-	fmt.Printf("Extension: %s\n", extension)
-	fmt.Printf("Dry Run: %t\n", dryRun)
+	// generic map
+	var jsonContent map[string]interface{}
+	err = json.Unmarshal(file, &jsonContent)
+	if err != nil {
+		log.Fatalf("Failed to unmarshal JSON: %v", err)
+	}
+
+	yamlData, err := yaml.Marshal(jsonContent)
+	if err != nil {
+		log.Fatalf("Failed to marshal YAML: %v", err)
+	}
+
+	fmt.Println(string(yamlData))
 }
